@@ -5,7 +5,7 @@ export const personalInfo = {
   avatar: '/avatar.jpg',
   social: {
     csdn: 'https://blog.csdn.net/2302_77276867',
-    resume: '/resume.pdf'  // 添加简历文件链接
+    resume: 'https://preeminent-semifreddo-f6ec81.netlify.app/'  // 添加简历文件链接
   }
 };
 
