@@ -3,6 +3,7 @@ import { personalInfo } from '../../config/content';
 import { Typewriter } from 'react-simple-typewriter';
 import { SiCsdn } from 'react-icons/si';
 import { HiChevronDown } from 'react-icons/hi';
+import { HiOutlineDocumentText } from 'react-icons/hi';
 
 const Home = ({ greeting }) => {
   const scrollToNext = () => {
@@ -13,7 +14,7 @@ const Home = ({ greeting }) => {
   };
 
   return (
-    <div className="py-32 flex flex-col items-center justify-center bg-blue-50 dark:bg-gray-900 px-4">
+    <div className="pt-32 pb-16 flex flex-col items-center justify-center bg-blue-50 dark:bg-gray-900 px-4">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -110,15 +111,29 @@ const Home = ({ greeting }) => {
           transition={{ delay: 0.7 }}
           viewport={{ once: false, margin: "-20%" }}
         >
-          {/* CSDN 图标 */}
-          <a
-            href={personalInfo.social.csdn}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-3 rounded-full border-2 border-gray-300 dark:border-gray-600 hover:border-red-500 dark:hover:border-red-400 text-gray-600 dark:text-gray-400 hover:text-red-500 dark:hover:text-red-400 transition-all duration-300 group"
-          >
-            <SiCsdn className="w-6 h-6" />
-          </a>
+          {/* 图标组 */}
+          <div className="flex items-center gap-4">
+            {/* CSDN 图标 */}
+            <a
+              href={personalInfo.social.csdn}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 rounded-full border-2 border-gray-300 dark:border-gray-600 hover:border-red-500 dark:hover:border-red-400 text-gray-600 dark:text-gray-400 hover:text-red-500 dark:hover:text-red-400 transition-all duration-300"
+            >
+              <SiCsdn className="w-6 h-6" />
+            </a>
+
+            {/* 简历按钮 */}
+            <a
+              href={personalInfo.social.resume}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 rounded-full border-2 border-gray-300 dark:border-gray-600 hover:border-blue-500 dark:hover:border-blue-400 text-gray-600 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-all duration-300 flex items-center gap-2"
+            >
+              <HiOutlineDocumentText className="w-6 h-6" />
+              <span className="text-sm font-medium">查看简历</span>
+            </a>
+          </div>
 
           {/* 向下箭头 */}
           <motion.button
