@@ -4,7 +4,7 @@ import { Typewriter } from 'react-simple-typewriter';
 import { SiCsdn } from 'react-icons/si';
 import { HiChevronDown } from 'react-icons/hi';
 import { HiOutlineDocumentText } from 'react-icons/hi';
-
+import SparklesText from '@/components/ui/sparkles-text';
 const Home = ({ greeting }) => {
   const scrollToNext = () => {
     const aboutSection = document.getElementById('about');
@@ -94,13 +94,13 @@ const Home = ({ greeting }) => {
           />
         </motion.h2>
         <motion.p 
-          className="text-3xl text-gray-700 dark:text-gray-200 mb-8"
+          className="text-2xl text-gray-700 dark:text-gray-200"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6 }}
           viewport={{ once: false, margin: "-20%" }}
         >
-          {personalInfo.motto}
+          <SparklesText text={personalInfo.motto} />
         </motion.p>
 
         {/* 社交媒体图标和向下箭头 */}
