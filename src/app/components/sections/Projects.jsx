@@ -200,34 +200,57 @@ const ProjectCard = ({ project, index }) => {
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.3 }}
       viewport={{ once: false, margin: "-20%" }}
-      whileHover={{ y: -5 }}
       className="group relative"
     >
-      {project.link ? (
-        <a
-          href={project.link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block"
-        >
-          <CardContent />
-        </a>
-      ) : (
-        <div className="cursor-default">
-          <CardContent />
-        </div>
-      )}
+      <motion.div
+        initial={{ 
+          opacity: 0,
+          x: index % 2 === 0 ? -200 : 200,
+          scale: 0.8,
+          rotate: index % 2 === 0 ? -5 : 5
+        }}
+        whileInView={{ 
+          opacity: 1,
+          x: 0,
+          scale: 1,
+          rotate: 0
+        }}
+        viewport={{ once: false, margin: "-10%" }}
+        transition={{ 
+          type: "spring",
+          stiffness: 70,
+          damping: 8,
+          mass: 0.8,
+          duration: 1,
+          delay: index * 0.2
+        }}
+      >
+        {project.link ? (
+          <a
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block"
+          >
+            <CardContent />
+          </a>
+        ) : (
+          <div className="cursor-default">
+            <CardContent />
+          </div>
+        )}
+      </motion.div>
     </motion.div>
   );
 };
 
 const Projects = ({ title, projects }) => {
   return (
-    <div className="pt-16 pb-32 flex items-center justify-center bg-blue-50 dark:bg-gray-900 px-4">
+    <div className="pt-16 pb-16 flex items-center justify-center bg-blue-50 dark:bg-gray-900 px-4">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}

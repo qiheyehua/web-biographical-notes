@@ -1,3 +1,5 @@
+import { FiCode, FiServer, FiDatabase, FiTerminal, FiCoffee, FiBook } from 'react-icons/fi';
+
 export const personalInfo = {
   name: '七禾页话',
   title: 'Backend development job seekers',
@@ -8,6 +10,39 @@ export const personalInfo = {
     resume: 'https://preeminent-semifreddo-f6ec81.netlify.app/'  // 添加简历文件链接
   }
 };
+
+export const skillItems = [
+  { 
+    icon: FiCode, 
+    text: "全栈开发", 
+    direction: "left" 
+  },
+  { 
+    icon: FiServer, 
+    text: "后端架构", 
+    direction: "top" 
+  },
+  { 
+    icon: FiDatabase, 
+    text: "数据库优化", 
+    direction: "right" 
+  },
+  { 
+    icon: FiTerminal, 
+    text: "DevOps", 
+    direction: "left" 
+  },
+  { 
+    icon: FiCoffee, 
+    text: "编程热情", 
+    direction: "bottom" 
+  },
+  { 
+    icon: FiBook, 
+    text: "持续学习", 
+    direction: "right" 
+  }
+];
 
 export const sections = [
   {
