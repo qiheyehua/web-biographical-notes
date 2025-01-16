@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="zh" className="scroll-smooth">
       
-      <body className="antialiased min-h-screen">
+      <body className="antialiased min-h-screen" suppressHydrationWarning>
         {children}
       </body>
     </html>

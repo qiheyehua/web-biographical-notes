@@ -93,19 +93,19 @@ const Home = ({ greeting }) => {
             style={{ cursor: 'text' }}
           />
         </motion.h2>
-        <motion.p 
-          className="text-2xl text-gray-700 dark:text-gray-200"
+        <motion.div 
+          className="text-2xl text-gray-700 dark:text-gray-200 mb-12"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6 }}
           viewport={{ once: false, margin: "-20%" }}
         >
           <SparklesText text={personalInfo.motto} />
-        </motion.p>
+        </motion.div>
 
         {/* 社交媒体图标和向下箭头 */}
         <motion.div
-          className="flex flex-col items-center justify-center gap-8"
+          className="flex flex-col items-center justify-center gap-12"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7 }}
