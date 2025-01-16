@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { personalInfo } from '../../config/content';
-
+import { Typewriter } from 'react-simple-typewriter'
 const Home = ({ greeting }) => {
   return (
     <div className="py-32 flex flex-col items-center justify-center bg-blue-50 dark:bg-gray-900 px-4">
@@ -36,17 +36,27 @@ const Home = ({ greeting }) => {
           transition={{ delay: 0.2 }}
           viewport={{ once: false, margin: "-20%" }}
         >
-          {greeting}{personalInfo.name}
+          {personalInfo.name}
         </motion.h1>
         <motion.h2 
-          className="text-2xl text-gray-600 dark:text-gray-300 mb-6"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4 }}
-          viewport={{ once: false, margin: "-20%" }}
-        >
-          {personalInfo.title}
-        </motion.h2>
+            className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5 }}
+            viewport={{ once: false, margin: "-20%" }}
+          >
+            <Typewriter
+              words={[personalInfo.title]}
+              loop={0}
+              cursor={true} // 确保 cursor 属性为 true
+              cursorStyle='_' // 确保 cursorStyle 属性为 '_'
+              typeSpeed={70}
+              deleteSpeed={50}
+              delaySpeed={1000}
+              // 添加内联样式确保光标显示
+              style={{ cursor: 'text' }}
+            />
+          </motion.h2>
         <motion.p 
           className="text-xl text-gray-700 dark:text-gray-200"
           initial={{ opacity: 0, y: 20 }}
