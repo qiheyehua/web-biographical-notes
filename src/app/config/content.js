@@ -3,6 +3,9 @@ export const personalInfo = {
   title: 'Backend development job seekers',
   motto: '我享受搭建项目的乐趣！',
   avatar: '/avatar.jpg',
+  social: {
+    csdn: 'https://blog.csdn.net/your-username'  // 替换为你的 CSDN 链接
+  }
 };
 
 export const sections = [
