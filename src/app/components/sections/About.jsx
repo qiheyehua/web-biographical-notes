@@ -1,8 +1,9 @@
 import { motion } from 'framer-motion';
+import { WobbleCard } from '@/components/ui/wobble-card';
 
 const About = ({ title, description }) => {
   return (
-    <div className="pt-16 pb-32 flex items-center justify-center bg-blue-50 dark:bg-gray-900 px-4">
+    <div className="pt-16 pb-16 flex items-center justify-center bg-blue-50 dark:bg-gray-900 px-4">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -13,11 +14,11 @@ const About = ({ title, description }) => {
         <h2 className="text-4xl font-bold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600 dark:from-purple-400 dark:to-pink-400">
           {title}
         </h2>
-        <div className="bg-white/80 dark:bg-black/20 backdrop-blur-sm rounded-2xl p-8 shadow-xl">
-          <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-200">
+        <WobbleCard>
+          <p className="text-gray-800 dark:text-gray-200 leading-relaxed">
             {description}
           </p>
-        </div>
+        </WobbleCard>
       </motion.div>
     </div>
   );

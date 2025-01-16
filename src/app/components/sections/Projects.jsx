@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 const Projects = ({ title }) => {
   return (
-    <div className="py-32 flex items-center justify-center bg-blue-50 dark:bg-gray-900 px-4">
+    <div className="pt-16 pb-32 flex items-center justify-center bg-blue-50 dark:bg-gray-900 px-4">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
