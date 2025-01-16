@@ -35,7 +35,26 @@ export const sections = [
   {
     id: 'projects',
     title: '我的项目',
-    content: {}
+    content: {
+      projects: [
+        {
+          title: 'Anki 记忆卡',
+          description: '通过记忆算法和个性化复习系统，可以根据每个人对不同知识点的难易程度，难的知识点多学习，简单的知识点少学习。',
+          image: '/projects/anki.png',
+          tags: ['VUE 3', 'TYPESCRIPT', 'TAILWIND CSS', 'NAIVE UI', 'PINIA'],
+          link: 'https://github.com/qihehuyu/anki',
+          github: 'https://github.com/qihehuyu/anki'
+        },
+        {
+          title: '后台管理系统',
+          description: '一个后台管理系统，该应用UI简洁现代，支持Dark Mode切换。',
+          image: '/projects/admin.png',
+          tags: ['VUE 3', 'TYPESCRIPT', 'TAILWIND CSS', 'ELEMENT PLUS', 'PINIA'],
+          link: 'aaa',
+          github: 'https://github.com/qihehuyu/admin-system'
+        }
+      ]
+    }
   },
   {
     id: 'skills',

@@ -78,7 +78,10 @@ const toggleTheme = () => {
       id: 'projects',
       title: sectionConfig[2].title,
       component: (
-        <Projects title={sectionConfig[2].title} />
+        <Projects 
+          title={sectionConfig[2].title}
+          projects={sectionConfig[2].content.projects}
+        />
       ),
     },
     {
