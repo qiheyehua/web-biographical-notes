@@ -8,6 +8,7 @@ import About from './sections/About';
 import Projects from './sections/Projects';
 import Skills from './sections/Skills';
 import Experience from './sections/Experience';
+import Footer from './Footer';
 import { personalInfo, sections as sectionConfig, themeConfig } from '../config/content';
 
 const FullPageScroll = () => {
@@ -174,6 +175,8 @@ const scrollToSection = (index) => {
             </section>
           ))}
         </main>
+
+        <Footer />
       </div>
 
       {/* 右侧滑动指示栏和主题切换按钮 */}

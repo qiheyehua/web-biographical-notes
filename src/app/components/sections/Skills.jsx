@@ -245,15 +245,15 @@ const Skills = ({ title }) => {
   return (
     <div className="min-h-[120vh] py-40 flex items-center justify-center bg-blue-50 dark:bg-gray-900">
       <div className="max-w-6xl mx-auto w-full px-4">
-        <div className="flex items-center justify-between mb-20">
-          <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600 dark:from-purple-400 dark:to-pink-400">
+        <div className="relative mb-20">
+          <h2 className="text-4xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600 dark:from-purple-400 dark:to-pink-400">
             {title}
           </h2>
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => setIsOrbitMode(!isOrbitMode)}
-            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/80 dark:bg-gray-800/80
+            className="absolute right-0 top-1/2 -translate-y-1/2 flex items-center gap-2 px-4 py-2 rounded-lg bg-white/80 dark:bg-gray-800/80
                      hover:bg-gradient-to-r hover:from-indigo-500/10 hover:to-purple-500/10
                      dark:hover:from-indigo-400/10 dark:hover:to-purple-400/10
                      shadow-sm hover:shadow-md transition-all duration-300"

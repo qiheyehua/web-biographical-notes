@@ -108,4 +108,46 @@ export const themeConfig = {
     lightOn: '/sounds/light-on.mp3',
     lightOff: '/sounds/light-off.mp3'
   }
-}; 
+};
+
+export const experienceData = [
+  {
+    title: "全栈开发",
+    organization: "个人项目开发",
+    date: "2023年9月 - 至今",
+    description: "开始尝试全栈开发，使用 Next.js、Vue3 等前端技术，结合 Spring Boot 后端开发个人项目。注重代码质量和用户体验，实践前后端分离架构，培养了全栈开发能力。"
+  },
+  {
+    title: "Spring 全家桶学习",
+    organization: "系统学习阶段",
+    date: "2023年3月 - 2023年8月",
+    description: "深入学习 Spring 生态系统，包括 Spring Boot、Spring Cloud、Spring Security 等。系统地学习了微服务架构、安全认证、分布式系统等企业级开发技术，为实际项目开发打下坚实基础。"
+  },
+  {
+    title: "Java 基础学习",
+    organization: "大学课程学习",
+    date: "2022年9月 - 2023年2月",
+    description: "开始接触 Java 编程，学习面向对象编程思想、Java 核心语法、集合框架、多线程等基础知识。通过课程项目和实践，培养了良好的编程习惯和问题解决能力。"
+  }
+];
+
+export const socialLinks = [
+  {
+    icon: 'SiCsdn',
+    href: personalInfo.social.csdn,
+    label: 'CSDN',
+    color: 'hover:text-red-500'
+  },
+  {
+    icon: 'FiGithub',
+    href: 'https://github.com/qiheyehua',
+    label: 'GitHub',
+    color: 'hover:text-gray-600'
+  },
+  {
+    icon: 'TbWorldWww',
+    href: 'http://8.154.22.57/#/',
+    label: 'Blog',
+    color: 'hover:text-blue-500'
+  }
+]; 
