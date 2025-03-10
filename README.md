@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 个人简历网站
 
-## Getting Started
+这是一个使用Next.js和Tailwind CSS构建的现代化个人简历网站，支持响应式设计和暗黑模式切换。
 
-First, run the development server:
+## 特性
+
+- ✨ 现代化UI设计与动画效果
+- 🌓 支持亮色/暗色模式切换
+- 📱 完全响应式设计
+- 🚀 基于Next.js构建，性能优异
+- 🎨 使用Tailwind CSS实现样式
+- 🔄 平滑的页面过渡效果
+- 🧩 模块化组件设计
+
+## 快速开始
+
+### 前置要求
+
+- Node.js 18.0.0或更高版本
+- npm或yarn包管理器
+
+### 安装步骤
+
+1.克隆仓库
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/web-biographical-notes.git
+cd web-biographical-notes
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2.安装依赖
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```
+npm install
+# 或
+yarn install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3.启动开发服务器
 
-## Learn More
+```
+npm run dev
+# 或
+yarn dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+4.在浏览器中打开 http://localhost:3000 查看网站
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 项目结构
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+web-biographical-notes/
+├── public/             # 静态资源文件
+│   ├── avatar.jpg      # 头像图片
+│   ├── projects/       # 项目图片
+│   └── sounds/         # 音效文件
+├── src/
+│   ├── app/            # Next.js应用目录
+│   │   ├── components/ # 页面组件
+│   │   ├── config/     # 配置文件
+│   │   └── layout.js   # 布局组件
+│   ├── components/     # 通用UI组件
+│   │   ├── magicui/    # 特效UI组件
+│   │   └── ui/         # 基础UI组件
+│   └── lib/            # 工具函数
+└── ...配置文件
+```
 
-## Deploy on Vercel
+## 自定义内容
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+您可以通过编辑 src/app/config/content.js 文件来自定义网站内容，包括：
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- 个人信息（姓名、头像、社交媒体链接等）
+- 技能列表
+- 项目展示
+- 工作经历
+- 网站各部分的文本内容
+
+## 部署
+
+### 部署到Vercel
+
+1. 在GitHub上创建仓库并推送代码
+2. 在Vercel上导入GitHub仓库
+3. 按照Vercel的指引完成部署
+
+### 静态导出
+
+您也可以生成静态HTML文件：
+
+```
+npm run build
+npm run export
+```
+
+生成的静态文件将位于 out 目录中，可以部署到任何静态网站托管服务
