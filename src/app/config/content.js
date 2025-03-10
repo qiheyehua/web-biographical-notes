@@ -1,5 +1,5 @@
 import { FiCode, FiServer, FiDatabase, FiTerminal, FiCoffee, FiBook } from 'react-icons/fi';
-
+//首页相关信息配置
 export const personalInfo = {
   name: '七禾页话',
   title: 'Backend development job seekers',
@@ -10,7 +10,7 @@ export const personalInfo = {
     resume: 'https://preeminent-semifreddo-f6ec81.netlify.app/'  // 添加简历文件链接
   }
 };
-
+//关于我页面的配置信息
 export const skillItems = [
   { 
     icon: FiCode, 
@@ -73,10 +73,10 @@ export const sections = [
     content: {
       projects: [
         {
-          title: 'Anki 记忆卡',
+          title: '在线博客',
           description: '通过记忆算法和个性化复习系统，可以根据每个人对不同知识点的难易程度，难的知识点多学习，简单的知识点少学习。',
           image: '/projects/anki.png',
-          tags: ['VUE 3', 'TYPESCRIPT', 'TAILWIND CSS', 'NAIVE UI', 'PINIA'],
+          tags: ['VUE 3', 'Spring Boot', 'TAILWIND CSS', 'NAIVE UI', 'PINIA'],
           link: 'https://github.com/qihehuyu/anki',
           github: 'https://github.com/qihehuyu/anki'
         },
@@ -146,7 +146,7 @@ export const socialLinks = [
   },
   {
     icon: 'TbWorldWww',
-    href: 'http://8.154.22.57/#/',
+    href: 'https://yiwanhe.us.kg',
     label: 'Blog',
     color: 'hover:text-blue-500'
   }

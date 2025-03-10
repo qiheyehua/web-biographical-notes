@@ -243,7 +243,7 @@ const Skills = ({ title }) => {
   const [isOrbitMode, setIsOrbitMode] = useState(false);
 
   return (
-    <div className="min-h-[120vh] py-40 flex items-center justify-center bg-blue-50 dark:bg-gray-900">
+    <div className="min-h-[140vh] py-48 flex items-center justify-center bg-blue-50 dark:bg-gray-900">
       <div className="max-w-6xl mx-auto w-full px-4">
         <div className="relative mb-20">
           <h2 className="text-4xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600 dark:from-purple-400 dark:to-pink-400">
@@ -293,4 +293,4 @@ const Skills = ({ title }) => {
   );
 };
 
-export default Skills; 
+export default Skills;

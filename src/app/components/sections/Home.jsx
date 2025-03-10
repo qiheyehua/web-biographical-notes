@@ -122,17 +122,6 @@ const Home = ({ greeting }) => {
             >
               <SiCsdn className="w-6 h-6" />
             </a>
-
-            {/* 简历按钮 */}
-            <a
-              href={personalInfo.social.resume}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 rounded-full border-2 border-gray-300 dark:border-gray-600 hover:border-blue-500 dark:hover:border-blue-400 text-gray-600 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-all duration-300 flex items-center gap-2"
-            >
-              <HiOutlineDocumentText className="w-6 h-6" />
-              <span className="text-sm font-medium">查看简历</span>
-            </a>
           </div>
 
           {/* 向下箭头 */}
@@ -156,4 +145,4 @@ const Home = ({ greeting }) => {
   );
 };
 
-export default Home; 
+export default Home;
